@@ -1,0 +1,250 @@
+.carttitle {
+    display: grid;
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 40px;
+    border: 0.5px solid rgb(34, 32, 32);
+    box-shadow: rgba(0, 0, 0, 1.2);
+    background-color: tomato;
+    color: white;
+
+}
+
+.cart {
+    margin-top: 40px;
+    margin-bottom: 200px;
+}
+
+.carttitle p {
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.object {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    /* margin-left: 50px; */
+}
+
+.photo {
+    width: 65px;
+    height: auto;
+}
+
+.total {
+    margin-top: 100px;
+    border: 2px solid black;
+    margin-left: 30%;
+    width: 40%;
+    border-radius: 30px;
+         /* box-shadow:0px 20px 500px rgba(0, 0,0, 0.10);  */
+}
+
+.total h2 {
+    margin: 20px;
+    padding: 10px;
+    text-transform: capitalize;
+    color: tomato;
+    font-size: 30px;
+}
+
+.subtotal {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+
+    margin: 10px;
+    background-color: tomato;
+    color: white;
+    padding: 10px;
+}
+
+.delivery {
+
+    display: flex;
+    background-color: tomato;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    /* box-shadow:0px 30px 90px rgba(0, 0,0, 1.2); */
+    margin: 10px;
+    color: white;
+    padding: 10px;
+
+
+}
+
+.totalall {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    background-color: tomato;
+    align-items: center;
+    gap: 10px;
+    /* box-shadow:0px 30px 90px rgba(0, 0,0, 1.2); */
+    margin: 10px;
+    padding: 10px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+.tbt{
+    width: 150px;
+    height: 50px;
+    padding: 5px;
+    background-color: tomato;
+    color: white;
+    border: none;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    
+}
+.tbt:hover{
+    transform: scale(1.02);
+}
+
+/* Responsive adjustments - horizontal layouts kept horizontal */
+@media (max-width: 1024px) {
+    .carttitle,
+    .object {
+        gap: 8px;
+        padding: 8px;
+    }
+
+    .carttitle p {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .photo {
+        width: 55px;
+    }
+
+    .total {
+        width: 55%;
+        margin-left: 22%;
+    }
+}
+
+@media (max-width: 768px) {
+    .carttitle,
+    .object {
+        gap: 5px;
+        padding: 6px;
+    }
+
+    .carttitle p {
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    .photo {
+        width: 45px;
+    }
+
+    .total {
+        width: 70%;
+        margin-left: 15%;
+        margin-top: 60px;
+    }
+
+    .total h2 {
+        font-size: 24px;
+        margin: 15px;
+    }
+
+    .subtotal,
+    .delivery,
+    .totalall {
+        gap: 5px;
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 600px) {
+    .carttitle,
+    .object {
+        grid-template-columns: 0.7fr 1fr 1fr 1fr 1fr 0.8fr;
+        gap: 3px;
+        padding: 4px;
+    }
+
+    .carttitle p {
+        padding: 4px;
+        font-size: 10px;
+    }
+
+    .photo {
+        width: 35px;
+    }
+
+    .total {
+        width: 70%;
+        margin-left: 5%;
+    }
+
+    .total h2 {
+        font-size: 20px;
+        margin: 10px;
+        padding: 5px;
+    }
+
+    .subtotal,
+    .delivery,
+    .totalall {
+        font-size: 12px;
+        padding: 6px;
+        margin: 5px;
+    }
+
+    .tbtn {
+        width: 120px;
+        height: 40px;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .carttitle p {
+        font-size: 9px;
+        padding: 3px;
+    }
+
+    .photo {
+        width: 28px;
+    }
+
+    .total {
+        width: 75%;
+        margin-left: 2.5%;
+    }
+
+    .total h2 {
+        font-size: 16px;
+    }
+
+    .subtotal,
+    .delivery,
+    .totalall {
+        font-size: 10px;
+        gap: 2px;
+    }
+
+    .tbtn {
+        width: 100px;
+        height: 36px;
+        font-size: 12px;
+    }
+}

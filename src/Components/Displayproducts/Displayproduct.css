@@ -1,0 +1,41 @@
+.displayproduct h2{
+    text-align: center;
+    /* margin-top: 6rem; */
+    margin-bottom: 1rem;
+
+}
+
+ .mapping {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 5px;
+    padding: 20px;
+}
+
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .mapping {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 15px;
+    }
+}
+
+/* Small tablets / large phones */
+@media (max-width: 768px) {
+    .mapping {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+        padding: 10px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .mapping {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6px;
+        padding: 8px;
+    }
+}

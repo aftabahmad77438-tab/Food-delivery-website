@@ -1,0 +1,94 @@
+
+.header{
+    height: 34vw;
+    margin: 30px auto;
+    background: url('/header_img.png') no-repeat center;
+    background-size: contain;
+    position: relative;
+    margin-top: 2rem;
+    animation: fadein 3s;
+}
+
+.heads{
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translateY(-70%); 
+}
+
+.heads h2{
+    font-size: 50px;
+    color: white;
+    font-weight: 550;
+}
+
+.paragraph{
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translateY(20%); 
+    margin-top: 20px;
+}
+
+.paragraph p{
+    color: white;
+}
+
+.paragraph button{
+    background-color: white;
+    color: black;
+    width: 90px;
+    height: 30px;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 20px;
+    border: none;
+    transform: scale(1.0);
+}
+.paragraph button:hover{
+    background-color: rgb(235, 127, 108);
+    color: white;
+}
+
+/* ---------- Tablets ---------- */
+@media (max-width: 1024px){
+    .header{
+        height: 45vw;
+    }
+    .heads h2{
+        font-size: 36px;
+    }
+    .paragraph p{
+        font-size: 15px;
+    }
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 600px){
+    .header{
+        height: 80vw;             
+        background-size: cover;   
+        margin-top: 1rem;
+    }
+    .heads{
+        left: 8%;
+        transform: translateY(-85%);
+    }
+    .heads h2{
+        font-size: 24px;
+    }
+    .paragraph{
+        left: 8%;
+        transform: translateY(0%);
+    }
+    .paragraph p{
+        font-size: 13px;
+        margin-right: 8%;   
+    }
+    .paragraph button{
+        width: 80px;
+        height: 28px;
+    }
+}
+
+

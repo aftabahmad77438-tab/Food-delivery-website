@@ -1,0 +1,55 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Outfit:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding:0 ;
+    box-sizing: border-box;
+    font-family: outfit;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+body{
+    min-height: 100vh;
+}
+.ul hr{
+    width: 90%;
+    height: 3px;
+    border-radius: 10px;
+    margin-top: 5px;
+    font-weight: 700;
+    background-color: tomato;
+}
+
+
+.basket {
+    position: relative; 
+    display: inline-block;
+}
+
+.basket p {
+    position: absolute;
+    background-color: red;
+    min-height: 10px;
+    min-width: 13px;
+    color: white;
+    border-radius: 10px;
+    font-size: 10px;      
+    text-align: center;
+    line-height: 10px;    
+    padding: 2px;         
+    top: -8px;          
+    right: -8px;         
+    margin: 0;           
+}
+@keyframes fadein{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

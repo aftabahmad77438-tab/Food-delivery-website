@@ -1,0 +1,71 @@
+.item{
+
+    height: auto;
+
+    border-radius: 15px;
+    border: none;
+     box-shadow: 0 2px 15px rgba(255, 99, 71, 0.08);
+    transition: box-shadow 0.3s ease;
+    animation: fadein 1s;
+
+}
+
+.item:hover {
+    box-shadow: 0 4px 25px rgba(255, 99, 71, 0.15);
+}
+.image{
+    position: relative;
+}
+.image .add{
+    position: absolute;
+    width: 35px;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+
+.image img{
+    width: 98%;
+    height: auto;
+     border-radius: 15px;
+     padding: 3px;
+     
+}
+.adding{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    padding: 10px;
+    /* margin: 5px; */
+}
+
+.rating{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 5px;
+}
+.rating p{
+    font-weight: 600;
+   
+}
+.descrip p{
+    font-weight: 300;
+     padding: 5px;
+     margin: 5px;
+
+    }
+.price p{
+    color: tomato;
+     padding: 5px;
+     margin: 5px;
+     font-size:22px;
+    font-weight: 600;
+}
