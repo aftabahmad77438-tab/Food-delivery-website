@@ -1,7 +1,5 @@
 .carttitle {
     display: grid;
-    /* justify-content: space-around; */
-    /* align-items: center; */
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     justify-content: center;
     align-items: center;
