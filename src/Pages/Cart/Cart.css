@@ -1,5 +1,7 @@
 .carttitle {
     display: grid;
+    /* justify-content: space-around; */
+    /* align-items: center; */
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     justify-content: center;
     align-items: center;
@@ -207,7 +209,7 @@
         margin: 5px;
     }
 
-    .tbtn {
+    .tbt {
         width: 120px;
         height: 40px;
         margin-left: 10px;
@@ -240,9 +242,172 @@
         gap: 2px;
     }
 
-    .tbtn {
+    .tbt {
         width: 100px;
         height: 36px;
         font-size: 12px;
+    }
+}
+
+/* ===== Medium Small Phones (400px - 479px) ===== */
+@media (max-width: 479px) and (min-width: 400px) {
+    .carttitle,
+    .object {
+        grid-template-columns: 0.6fr 1fr 1fr 1fr 1fr 0.7fr;
+        gap: 2px;
+        padding: 3px;
+    }
+
+    .carttitle p {
+        font-size: 8px;
+        padding: 3px 2px;
+    }
+
+    .photo {
+        width: 25px;
+    }
+
+    .total {
+        width: 85%;
+        margin-left: 5%;
+        margin-top: 40px;
+        border-radius: 20px;
+    }
+
+    .total h2 {
+        font-size: 15px;
+        margin: 8px;
+        padding: 4px;
+    }
+
+    .subtotal,
+    .delivery,
+    .totalall {
+        font-size: 9px;
+        gap: 2px;
+        padding: 5px;
+        margin: 4px;
+    }
+
+    .tbt {
+        width: 90px;
+        height: 34px;
+        font-size: 11px;
+        margin-left: 8px;
+        margin-bottom: 15px;
+        border-radius: 15px;
+    }
+}
+
+/* ===== Very Small Phones (360px - 399px) ===== */
+@media (max-width: 399px) and (min-width: 360px) {
+    .carttitle,
+    .object {
+        grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 0.6fr;
+        gap: 2px;
+        padding: 2px;
+    }
+
+    .carttitle p {
+        font-size: 7px;
+        padding: 2px 1px;
+    }
+
+    .photo {
+        width: 22px;
+    }
+
+    .cart {
+        margin-top: 25px;
+        margin-bottom: 120px;
+    }
+
+    .total {
+        width: 92%;
+        margin-left: 4%;
+        margin-top: 30px;
+        border-radius: 18px;
+    }
+
+    .total h2 {
+        font-size: 14px;
+        margin: 6px;
+        padding: 3px;
+    }
+
+    .subtotal,
+    .delivery,
+    .totalall {
+        font-size: 8px;
+        gap: 1px;
+        padding: 4px;
+        margin: 3px;
+    }
+
+    .tbt {
+        width: 80px;
+        height: 30px;
+        font-size: 10px;
+        margin-left: 6px;
+        margin-bottom: 12px;
+        border-radius: 12px;
+    }
+}
+
+/* ===== Ultra Small Phones (below 360px) ===== */
+@media (max-width: 359px) {
+    .carttitle,
+    .object {
+        grid-template-columns: 0.4fr 1fr 1fr 1fr 1fr 0.5fr;
+        gap: 1px;
+        padding: 2px;
+    }
+
+    .carttitle p {
+        font-size: 6px;
+        padding: 2px 1px;
+        font-weight: 500;
+    }
+
+    .photo {
+        width: 18px;
+    }
+
+    .cart {
+        margin-top: 20px;
+        margin-bottom: 100px;
+    }
+
+    .total {
+        width: 96%;
+        margin-left: 2%;
+        margin-top: 25px;
+        border-radius: 15px;
+        border-width: 1px;
+    }
+
+    .total h2 {
+        font-size: 12px;
+        margin: 5px;
+        padding: 2px;
+    }
+
+    .subtotal,
+    .delivery,
+    .totalall {
+        font-size: 7px;
+        gap: 1px;
+        padding: 3px;
+        margin: 2px;
+    }
+
+    .tbt {
+        width: 70px;
+        height: 28px;
+        font-size: 9px;
+        margin-left: 5px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        padding: 3px;
     }
 }
