@@ -65,3 +65,117 @@
         font-size: 12px;
     }
 }
+
+/* ===== Hamburger toggle (hidden on desktop) ===== */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+    padding: 5px;
+    z-index: 1001;
+}
+
+.hamburger .line {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    border-radius: 3px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.hamburger .line.active:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+.hamburger .line.active:nth-child(2) {
+    opacity: 0;
+}
+.hamburger .line.active:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* ===== Mobile dropdown (overrides the wrap rule below 768px) ===== */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .Navbar {
+        position: relative;
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+
+    .ul {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        width: 100%;
+        margin-top: 0;
+        background: white;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 0;
+        padding: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.35s ease, padding 0.35s ease;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        z-index: 1000;
+    }
+
+    .ul.open {
+        max-height: 400px;
+        padding: 15px 0;
+    }
+
+    .ul a {
+        width: 100%;
+        text-align: center;
+        padding: 12px 0;
+        font-size: 16px;
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+    .ul a:last-child {
+        border-bottom: none;
+    }
+
+    .ul hr {
+        display: none;
+    }
+}
+
+/* ===== Small phones (below 480px) ===== */
+@media (max-width: 480px) {
+    .hamburger .line {
+        width: 22px;
+        height: 2.5px;
+    }
+
+    .ul.open {
+        padding: 10px 0;
+    }
+
+    .ul a {
+        font-size: 14px;
+        padding: 10px 0;
+    }
+}
+
+/* ===== Very small phones (below 360px) ===== */
+@media (max-width: 359px) {
+    .hamburger .line {
+        width: 20px;
+        height: 2px;
+    }
+
+    .ul a {
+        font-size: 13px;
+        padding: 9px 0;
+    }
+}
