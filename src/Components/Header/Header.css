@@ -1,4 +1,3 @@
-
 .header{
     height: 34vw;
     margin: 30px auto;
@@ -91,4 +90,245 @@
     }
 }
 
+/* ===== Extra Large Screens (1400px and up) ===== */
+@media (min-width: 1400px) {
+    .header {
+        height: 32vw;
+        margin-top: 2.5rem;
+    }
+    .heads {
+        left: 16%;
+    }
+    .heads h2 {
+        font-size: 60px;
+    }
+    .paragraph {
+        left: 16%;
+    }
+    .paragraph p {
+        font-size: 18px;
+    }
+    .paragraph button {
+        width: 100px;
+        height: 34px;
+        font-size: 15px;
+    }
+}
 
+/* ===== Large Desktops (1200px - 1399px) ===== */
+@media (max-width: 1399px) and (min-width: 1200px) {
+    .header {
+        height: 33vw;
+        margin-top: 2.2rem;
+    }
+    .heads {
+        left: 15%;
+    }
+    .heads h2 {
+        font-size: 55px;
+    }
+    .paragraph p {
+        font-size: 16px;
+    }
+    .paragraph button {
+        width: 95px;
+        height: 32px;
+    }
+}
+
+/* ===== Laptops / Small Desktops (1025px - 1199px) ===== */
+@media (max-width: 1199px) and (min-width: 1025px) {
+    .header {
+        height: 34vw;
+        margin-top: 2rem;
+    }
+    .heads {
+        left: 15%;
+    }
+    .heads h2 {
+        font-size: 50px;
+    }
+    .paragraph p {
+        font-size: 15px;
+    }
+    .paragraph button {
+        width: 90px;
+        height: 30px;
+    }
+}
+
+/* ===== Tablets (769px - 1024px) ===== */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .header {
+        height: 45vw;
+        margin-top: 1.8rem;
+    }
+    .heads h2 {
+        font-size: 36px;
+    }
+    .paragraph p {
+        font-size: 15px;
+    }
+    .paragraph button {
+        width: 85px;
+        height: 29px;
+        font-size: 14px;
+    }
+}
+
+/* ===== Small Tablets / Large Phones (601px - 768px) ===== */
+@media (max-width: 768px) and (min-width: 601px) {
+    .header {
+        height: 55vw;
+        background-size: cover;
+        margin-top: 1.5rem;
+    }
+    .heads {
+        left: 10%;
+        transform: translateY(-80%);
+    }
+    .heads h2 {
+        font-size: 30px;
+    }
+    .paragraph {
+        left: 10%;
+        transform: translateY(10%);
+    }
+    .paragraph p {
+        font-size: 14px;
+        margin-right: 8%;
+    }
+    .paragraph button {
+        width: 82px;
+        height: 28px;
+        font-size: 13px;
+    }
+}
+
+/* ===== Medium Phones (481px - 600px) ===== */
+@media (max-width: 600px) and (min-width: 481px) {
+    .header {
+        height: 80vw;
+        background-size: cover;
+        margin-top: 1rem;
+    }
+    .heads {
+        left: 8%;
+        transform: translateY(-85%);
+    }
+    .heads h2 {
+        font-size: 24px;
+    }
+    .paragraph {
+        left: 8%;
+        transform: translateY(0%);
+    }
+    .paragraph p {
+        font-size: 13px;
+        margin-right: 8%;
+    }
+    .paragraph button {
+        width: 80px;
+        height: 28px;
+        font-size: 13px;
+    }
+}
+
+/* ===== Small Phones (400px - 480px) ===== */
+@media (max-width: 480px) and (min-width: 400px) {
+    .header {
+        height: 90vw;
+        background-size: cover;
+        margin-top: 0.8rem;
+        margin: 15px auto;
+    }
+    .heads {
+        left: 7%;
+        transform: translateY(-90%);
+    }
+    .heads h2 {
+        font-size: 20px;
+    }
+    .paragraph {
+        left: 7%;
+        transform: translateY(0%);
+        margin-top: 15px;
+    }
+    .paragraph p {
+        font-size: 12px;
+        margin-right: 10%;
+    }
+    .paragraph button {
+        width: 75px;
+        height: 26px;
+        font-size: 12px;
+        padding: 4px;
+    }
+}
+
+/* ===== Very Small Phones (360px - 399px) ===== */
+@media (max-width: 399px) and (min-width: 360px) {
+    .header {
+        height: 100vw;
+        background-size: cover;
+        margin: 10px auto;
+        margin-top: 0.7rem;
+    }
+    .heads {
+        left: 6%;
+        transform: translateY(-95%);
+    }
+    .heads h2 {
+        font-size: 17px;
+    }
+    .paragraph {
+        left: 6%;
+        transform: translateY(0%);
+        margin-top: 12px;
+    }
+    .paragraph p {
+        font-size: 11px;
+        margin-right: 10%;
+    }
+    .paragraph button {
+        width: 70px;
+        height: 24px;
+        font-size: 11px;
+        padding: 3px;
+        border-radius: 16px;
+    }
+}
+
+/* ===== Ultra Small Phones (below 360px) ===== */
+@media (max-width: 359px) {
+    .header {
+        height: 110vw;
+        background-size: cover;
+        margin: 8px auto;
+        margin-top: 0.5rem;
+    }
+    .heads {
+        left: 5%;
+        transform: translateY(-100%);
+    }
+    .heads h2 {
+        font-size: 15px;
+    }
+    .paragraph {
+        left: 5%;
+        transform: translateY(0%);
+        margin-top: 10px;
+    }
+    .paragraph p {
+        font-size: 10px;
+        margin-right: 10%;
+    }
+    .paragraph button {
+        width: 65px;
+        height: 22px;
+        font-size: 10px;
+        padding: 3px;
+        border-radius: 14px;
+        margin-top: 6px;
+    }
+}
