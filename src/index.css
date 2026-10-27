@@ -1,32 +1,35 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Outfit:wght@100..900&display=swap');
 
-*{
+* {
     margin: 0;
-    padding:0 ;
+    padding: 0;
     box-sizing: border-box;
-    font-family: outfit;
+    font-family: 'Outfit', sans-serif;
     scroll-behavior: smooth;
 }
-a{
+
+a {
     text-decoration: none;
     color: inherit;
 }
-body{
+
+body {
     min-height: 100vh;
 }
-.ul hr{
+
+/* Fixed selector: .ul -> ul */
+ul hr {
     width: 90%;
     height: 3px;
     border-radius: 10px;
     margin-top: 5px;
-    font-weight: 700;
     background-color: tomato;
+    border: none;
 }
 
-
+/* Basket badge */
 .basket {
-    position: relative; 
+    position: relative;
     display: inline-block;
 }
 
@@ -37,19 +40,91 @@ body{
     min-width: 13px;
     color: white;
     border-radius: 10px;
-    font-size: 10px;      
+    font-size: 10px;
     text-align: center;
-    line-height: 10px;    
-    padding: 2px;         
-    top: -8px;          
-    right: -8px;         
-    margin: 0;           
+    line-height: 10px;
+    padding: 2px;
+    top: -8px;
+    right: -8px;
+    margin: 0;
 }
-@keyframes fadein{
-    0%{
-        opacity: 0;
+
+@keyframes fadein {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* ============================= */
+/* MEDIA QUERIES                 */
+/* ============================= */
+
+/* Tablets and small laptops */
+@media (max-width: 992px) {
+    ul hr {
+        width: 95%;
     }
-    100%{
-        opacity: 1;
+}
+
+/* Large phones / small tablets */
+@media (max-width: 768px) {
+    body {
+        font-size: 15px;
+    }
+
+    ul hr {
+        width: 100%;
+        height: 2px;
+        margin-top: 3px;
+    }
+
+    .basket p {
+        min-width: 12px;
+        min-height: 12px;
+        font-size: 9px;
+        line-height: 12px;
+        top: -6px;
+        right: -6px;
+    }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    ul hr {
+        height: 2px;
+        margin-top: 2px;
+    }
+
+    .basket p {
+        min-width: 11px;
+        min-height: 11px;
+        font-size: 8px;
+        line-height: 11px;
+        padding: 1px;
+        top: -5px;
+        right: -5px;
+        border-radius: 8px;
+    }
+
+    /* Prevent horizontal scroll on tiny screens */
+    html, body {
+        overflow-x: hidden;
+    }
+}
+
+/* Very small phones (e.g. iPhone SE, 320px) */
+@media (max-width: 360px) {
+    body {
+        font-size: 13px;
+    }
+
+    .basket p {
+        min-width: 10px;
+        min-height: 10px;
+        font-size: 7px;
+        line-height: 10px;
     }
 }
