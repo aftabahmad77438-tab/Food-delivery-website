@@ -39,3 +39,113 @@
         padding: 8px;
     }
 }
+
+/* ===== Extra Large Screens (1400px and up) ===== */
+@media (min-width: 1400px) {
+    .displayproduct h2 {
+        font-size: 32px;
+        margin-bottom: 1.5rem;
+    }
+
+    .mapping {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 8px;
+        padding: 25px;
+    }
+}
+
+/* ===== Large Desktops (1200px - 1399px) ===== */
+@media (max-width: 1399px) and (min-width: 1200px) {
+    .displayproduct h2 {
+        font-size: 28px;
+    }
+
+    .mapping {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 6px;
+        padding: 22px;
+    }
+}
+
+/* ===== Laptops / Small Desktops (1025px - 1199px) ===== */
+@media (max-width: 1199px) and (min-width: 1025px) {
+    .displayproduct h2 {
+        font-size: 26px;
+    }
+
+    .mapping {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 5px;
+        padding: 20px;
+    }
+}
+
+/* ===== Tablets (769px - 1024px) ===== */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .displayproduct h2 {
+        font-size: 24px;
+        margin-bottom: 0.9rem;
+    }
+
+    .mapping {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 15px;
+    }
+}
+
+/* ===== Small Tablets / Large Phones (481px - 768px) ===== */
+@media (max-width: 768px) and (min-width: 481px) {
+    .displayproduct h2 {
+        font-size: 22px;
+        margin-bottom: 0.8rem;
+    }
+
+    .mapping {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+        padding: 10px;
+    }
+}
+
+/* ===== Medium Phones (400px - 480px) ===== */
+@media (max-width: 480px) and (min-width: 400px) {
+    .displayproduct h2 {
+        font-size: 20px;
+        margin-bottom: 0.7rem;
+    }
+
+    .mapping {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6px;
+        padding: 8px;
+    }
+}
+
+/* ===== Very Small Phones (360px - 399px) ===== */
+@media (max-width: 399px) and (min-width: 360px) {
+    .displayproduct h2 {
+        font-size: 18px;
+        margin-bottom: 0.6rem;
+    }
+
+    .mapping {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+        padding: 6px;
+    }
+}
+
+/* ===== Ultra Small Phones (below 360px) ===== */
+@media (max-width: 359px) {
+    .displayproduct h2 {
+        font-size: 16px;
+        margin-bottom: 0.5rem;
+    }
+
+    .mapping {
+        grid-template-columns: 1fr;
+        gap: 4px;
+        padding: 5px;
+    }
+}
