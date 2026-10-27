@@ -69,3 +69,409 @@
      font-size:22px;
     font-weight: 600;
 }
+
+/* ===== Extra Large Screens (1400px and up) ===== */
+@media (min-width: 1400px) {
+    .item {
+        border-radius: 18px;
+    }
+
+    .image img {
+        border-radius: 18px;
+        padding: 4px;
+    }
+
+    .image .add {
+        width: 40px;
+        bottom: 18px;
+        right: 18px;
+        border-radius: 22px;
+    }
+
+    .adding {
+        bottom: 18px;
+        right: 18px;
+        gap: 12px;
+        padding: 12px;
+        border-radius: 55px;
+    }
+
+    .rating,
+    .descrip p,
+    .price p {
+        padding: 6px;
+        margin: 6px;
+    }
+
+    .rating p {
+        font-size: 18px;
+    }
+
+    .descrip p {
+        font-size: 17px;
+    }
+
+    .price p {
+        font-size: 24px;
+    }
+}
+
+/* ===== Large Desktops (1200px - 1399px) ===== */
+@media (max-width: 1399px) and (min-width: 1200px) {
+    .item {
+        border-radius: 16px;
+    }
+
+    .image img {
+        border-radius: 16px;
+        padding: 3px;
+    }
+
+    .image .add {
+        width: 37px;
+        bottom: 16px;
+        right: 16px;
+    }
+
+    .adding {
+        bottom: 16px;
+        right: 16px;
+        gap: 10px;
+        padding: 11px;
+    }
+
+    .rating p {
+        font-size: 17px;
+    }
+
+    .descrip p {
+        font-size: 16px;
+    }
+
+    .price p {
+        font-size: 23px;
+    }
+}
+
+/* ===== Laptops / Small Desktops (992px - 1199px) ===== */
+@media (max-width: 1199px) and (min-width: 992px) {
+    .item {
+        border-radius: 15px;
+    }
+
+    .image .add {
+        width: 35px;
+        bottom: 15px;
+        right: 15px;
+    }
+
+    .adding {
+        bottom: 15px;
+        right: 15px;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .rating p {
+        font-size: 16px;
+    }
+
+    .descrip p {
+        font-size: 15px;
+    }
+
+    .price p {
+        font-size: 22px;
+    }
+}
+
+/* ===== Tablets (768px - 991px) ===== */
+@media (max-width: 991px) and (min-width: 768px) {
+    .item {
+        border-radius: 14px;
+    }
+
+    .image img {
+        border-radius: 14px;
+        padding: 3px;
+    }
+
+    .image .add {
+        width: 32px;
+        bottom: 12px;
+        right: 12px;
+        border-radius: 18px;
+    }
+
+    .adding {
+        bottom: 12px;
+        right: 12px;
+        gap: 8px;
+        padding: 9px;
+        border-radius: 45px;
+    }
+
+    .rating {
+        padding: 4px;
+        margin: 4px;
+    }
+
+    .rating p {
+        font-size: 15px;
+    }
+
+    .descrip p {
+        font-size: 14px;
+        padding: 4px;
+        margin: 4px;
+    }
+
+    .price p {
+        font-size: 20px;
+        padding: 4px;
+        margin: 4px;
+    }
+}
+
+/* ===== Large Phones / Small Tablets (576px - 767px) ===== */
+@media (max-width: 767px) and (min-width: 576px) {
+    .item {
+        border-radius: 13px;
+    }
+
+    .image img {
+        border-radius: 13px;
+        padding: 2px;
+    }
+
+    .image .add {
+        width: 28px;
+        bottom: 10px;
+        right: 10px;
+        border-radius: 16px;
+    }
+
+    .adding {
+        bottom: 10px;
+        right: 10px;
+        gap: 7px;
+        padding: 8px;
+        border-radius: 40px;
+    }
+
+    .rating {
+        padding: 4px;
+        margin: 4px;
+    }
+
+    .rating p {
+        font-size: 14px;
+    }
+
+    .descrip p {
+        font-size: 13px;
+        padding: 4px;
+        margin: 4px;
+    }
+
+    .price p {
+        font-size: 18px;
+        padding: 4px;
+        margin: 4px;
+    }
+}
+
+/* ===== Medium Phones (480px - 575px) ===== */
+@media (max-width: 575px) and (min-width: 480px) {
+    .item {
+        border-radius: 12px;
+    }
+
+    .image img {
+        border-radius: 12px;
+        padding: 2px;
+    }
+
+    .image .add {
+        width: 26px;
+        bottom: 8px;
+        right: 8px;
+        border-radius: 14px;
+    }
+
+    .adding {
+        bottom: 8px;
+        right: 8px;
+        gap: 6px;
+        padding: 7px;
+        border-radius: 35px;
+    }
+
+    .rating {
+        padding: 3px;
+        margin: 3px;
+    }
+
+    .rating p {
+        font-size: 13px;
+    }
+
+    .descrip p {
+        font-size: 12px;
+        padding: 3px;
+        margin: 3px;
+    }
+
+    .price p {
+        font-size: 17px;
+        padding: 3px;
+        margin: 3px;
+    }
+}
+
+/* ===== Small Phones (400px - 479px) ===== */
+@media (max-width: 479px) and (min-width: 400px) {
+    .item {
+        border-radius: 10px;
+    }
+
+    .image img {
+        border-radius: 10px;
+        padding: 2px;
+        width: 100%;
+    }
+
+    .image .add {
+        width: 24px;
+        bottom: 7px;
+        right: 7px;
+        border-radius: 12px;
+    }
+
+    .adding {
+        bottom: 7px;
+        right: 7px;
+        gap: 5px;
+        padding: 6px;
+        border-radius: 30px;
+    }
+
+    .rating {
+        padding: 3px;
+        margin: 3px;
+    }
+
+    .rating p {
+        font-size: 12px;
+    }
+
+    .descrip p {
+        font-size: 11px;
+        padding: 3px;
+        margin: 3px;
+    }
+
+    .price p {
+        font-size: 15px;
+        padding: 3px;
+        margin: 3px;
+    }
+}
+
+/* ===== Very Small Phones (360px - 399px) ===== */
+@media (max-width: 399px) and (min-width: 360px) {
+    .item {
+        border-radius: 9px;
+    }
+
+    .image img {
+        border-radius: 9px;
+        padding: 2px;
+        width: 100%;
+    }
+
+    .image .add {
+        width: 22px;
+        bottom: 6px;
+        right: 6px;
+        border-radius: 11px;
+    }
+
+    .adding {
+        bottom: 6px;
+        right: 6px;
+        gap: 4px;
+        padding: 5px;
+        border-radius: 25px;
+    }
+
+    .rating {
+        padding: 2px;
+        margin: 2px;
+    }
+
+    .rating p {
+        font-size: 11px;
+    }
+
+    .descrip p {
+        font-size: 10px;
+        padding: 2px;
+        margin: 2px;
+    }
+
+    .price p {
+        font-size: 14px;
+        padding: 2px;
+        margin: 2px;
+    }
+}
+
+/* ===== Ultra Small Phones (below 360px) ===== */
+@media (max-width: 359px) {
+    .item {
+        border-radius: 8px;
+    }
+
+    .image img {
+        border-radius: 8px;
+        padding: 1px;
+        width: 100%;
+    }
+
+    .image .add {
+        width: 20px;
+        bottom: 5px;
+        right: 5px;
+        border-radius: 10px;
+    }
+
+    .adding {
+        bottom: 5px;
+        right: 5px;
+        gap: 3px;
+        padding: 4px;
+        border-radius: 20px;
+    }
+
+    .rating {
+        padding: 2px;
+        margin: 2px;
+    }
+
+    .rating p {
+        font-size: 10px;
+    }
+
+    .descrip p {
+        font-size: 9px;
+        padding: 2px;
+        margin: 2px;
+    }
+
+    .price p {
+        font-size: 13px;
+        padding: 2px;
+        margin: 2px;
+    }
+}
